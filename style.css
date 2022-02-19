@@ -1,0 +1,49 @@
+html {
+	background-color:#ededed;
+	font-family:arial;
+}
+.tab1 {
+	width:90px;
+	height:16px;
+	background-color:#0053bf;
+	font-size:16;
+	font-family:arial;
+	color:white;
+	font-weight:bold;
+	cursor:pointer;
+	float:left;
+}
+.tab1:hover {
+	background-color:#0064e6;
+}
+.tab1div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.window {
+	width:99%;
+	height:calc(100vh - 30px);
+	background-color:white;
+	position:absolute;
+	top:24px;
+	left:8px;
+}
+button {
+	background-color:#c2c2c2;
+	cursor:pointer;
+	border-width:1px;
+	border-radius:4px;
+}
+button:hover {
+	background-color:#dbdbdb;
+}
+img {
+	image-rendering:pixelated;
+}
+#ImportedFiles {
+	font-weight:bold;
+}
+.bold {
+	font-weight:bold;
+}
