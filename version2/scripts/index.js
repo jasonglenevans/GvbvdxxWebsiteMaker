@@ -1,5 +1,6 @@
 let lastData = [];
 let WebsiteData = [];
+let previewingWebsite=function(){console.log('Your In Preview Mode, You Can Not Play Background Music For The Preview.')}
 function download(data,name) {
 		var a = document.createElement("a");
 		a.download = name;
@@ -97,6 +98,13 @@ function addelement(type) {
 		elmt.style.maxWidth = "900px";
 		elmt.style.maxHeight = "900px";
 		try{ elmt.src = files[document.getElementById("FileSelector").value].dataURL; }catch(e) {
+			setTimeout(function () {
+				document.getElementById("Undo").click();
+			},1)
+		}
+	}
+	if (type == "bgm") {
+		try{ elmt = document.createElement("script"); elmt.innerHTML = "try{previewingWebsite()}catch(e){bgm = document.createElement('audio');bgm.src='"+files[document.getElementById("FileSelector").value].dataURL+"';loop=function(){bgm.play();setTimeout(loop,1);};setTimeout(loop,1);}"; }catch(e) {
 			setTimeout(function () {
 				document.getElementById("Undo").click();
 			},1)

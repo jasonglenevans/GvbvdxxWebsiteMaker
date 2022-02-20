@@ -1,11 +1,11 @@
-html {
-	background-color:#ededed;
+body {
+	background-color:#212121;
 	font-family:arial;
 }
 .tab1 {
 	width:90px;
 	height:16px;
-	background-color:#0053bf;
+	background-color:#00609c;
 	font-size:16;
 	font-family:arial;
 	color:white;
@@ -24,7 +24,7 @@ html {
 .window {
 	width:99%;
 	height:calc(100vh - 30px);
-	background-color:white;
+	background-color:#303030;
 	position:absolute;
 	top:24px;
 	left:8px;
