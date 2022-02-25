@@ -1,0 +1,15 @@
+{
+  "name": "Gvbvdxxs Website Maker",
+  "short_name": "Gvbvdxxs Website Maker",
+  "description": "Make a website!",
+  "icons": [{
+      "src": "assets/icons/ic-face.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    }, {
+      "src": "icons/website.ico",
+      "sizes": "64x64 32x32 16x16" 
+    }],
+  "start_url": "index.html",
+  "orientation": "portrait"
+}
